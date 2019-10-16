@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Todo = ({item, completed, id }) => {
+const Todo = ({item, completed, toggleTodo, id }) => {
     return (
-        <li>
-            {item}
-        </li>
+        <li style={completed ? {textDecoration: 'line-through'} : {} }  onClick={() => toggleTodo(id)}>{item}</li>
     )
 }
 
