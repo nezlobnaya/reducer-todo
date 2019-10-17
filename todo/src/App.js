@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Todos</h1>
       <TodoList todos={state.todos} toggleTodo={toggleTodo}/>
       <TodoForm addTodo={addTodo}
           handleChange={handleChange} item={state.item}
